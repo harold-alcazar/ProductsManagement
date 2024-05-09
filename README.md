@@ -32,7 +32,8 @@
 
 ### Se comparte colección de postman para ejecutar todos los servicios desplegados en el app service de azure 
 
-	https://github.com/harold-alcazar/ProductsManagement/files/15256923/ProductsManagement.postman_collection.json
+	https://github.com/harold-alcazar/ProductsManagement/files/15257105/ProductsManagement.postman_collection.json
+
 
  	
 
