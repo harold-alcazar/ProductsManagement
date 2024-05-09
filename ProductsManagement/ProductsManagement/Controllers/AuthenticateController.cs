@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using ProductsManagement.Api.Models;
@@ -61,6 +62,7 @@ namespace ProductsManagement.Api.Controllers
 
         [HttpPost]
         [Route("register")]
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
             var userExists = await _userManager.FindByNameAsync(model.Username);
